@@ -1,0 +1,1 @@
+{"2022-09_ETS": {"path": "models/2022-09_ETS_model.pkl", "predictions": "data/processed/2022-09_ETS_pred.csv", "type": "ETS", "rmse": 398528.38462476496, "generation": "2022-09"}}

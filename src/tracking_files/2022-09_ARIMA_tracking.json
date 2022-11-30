@@ -1,0 +1,1 @@
+{"2022-09_ARIMA": {"path": "models/2022-09_arima_model.pkl", "predictions": "data/processed/2022-09_ari_pred.csv", "type": "ARIMA", "rmse": 1072948.835296386, "generation": "2022-09"}}

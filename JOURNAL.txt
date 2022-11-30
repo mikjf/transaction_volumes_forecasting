@@ -1,0 +1,97 @@
+# SIX Payment Transaction Volumes Forecasting
+
+#### -- Project Status: [Completed]
+
+Our team tracked the progress of this project by creating a journal. The details can be found below.
+
+## README.md
+* In case you would like to have a look at the [README.md](README.md) file instead.
+
+### Journal
+
+## Day 1: 24/10/2022
+* Created repository structure
+* Started data exploration
+
+## Day 2: 25/10/2022
+* First meeting with the SIX Team to discuss about the project
+* Data cleaning
+* K-means clustering
+* t-SNE
+* Seasonal decompose
+* Auto-ARIMA modelling started
+* Manual ARIMA modelling started
+
+## Day 3: 26/10/2022
+* K-means clustering on time series further exploration
+* TSForecastingExperiment
+* Augmented Dickey-Fuller test
+* Auto-ARIMA modelling further exploration
+* SOM modelling exploration
+* Meeting about datapoints and additional models to explore
+
+## Day 4: 27/10/2022
+* Exponential smoothing (ETS)
+* Sklearn time series split model selection
+* Anomaly detection experiments started
+* Auto-ARIMA, ARIMA, SARIMA, SARIMAX further exploration
+
+## Day 5: 28/10/2022
+* Using previous models on the sum of transaction volumes by month
+* Auto-ARIMA modelling
+* Exponential smoothing (ETS) modelling
+* Prophet modelling
+
+## Day 6: 31/10/2022
+* Working on same models as Day 5
+* Clustering Functional PCA trial
+* Clustering TSClustering trial
+* SOM Self-Organizing Map trial
+
+## Day 7: 01/11/2022
+* Tuning and comparison of chosen models
+* Consecutive zeros analysis
+* Total number of transactions further analysis
+
+## Day 8: 02/11/2022
+* Presentation preparation
+* Meeting with SIX
+* Furher modelling analysis aggregated data vs sum of individual merchants
+* Rating new and leaving clients
+* Focus on automation setup
+
+## Day 9-10: 03-04/11/2022
+* Approach tuning to meet SIX's requirements
+* Further focus on automation setup
+
+## Day 11-15: 07-11/11/2022
+* Final models' selection
+* S(ARIMA), ETS and Prophet
+* Multivariate time series analysis exploration
+* Conversion of notebooks into scripts
+* Automation testing
+
+## Day 16: 14/11/2022
+* Q&A preparation for last meeting with SIX
+
+## Day 17: 15/11/2022
+* Meeting with SIX
+* Tweaks and cleaning
+* Tracking files and models (Pickle, JSON)
+* Further editing on the final presentation
+
+## Day 18-19: 16-17/11/2022
+* Scripts' cleaning
+* Streamlit app setup
+* Presentation rehearsal
+
+## Day 20: 18/11/2022
+* Final day project presentation
+
+## Day 21-27: 21-29/11/2022
+* Mock dataset created and tested
+* General repository clean-up
+
+## Day 28: 30/11/2022
+* Project demo to the SIX team
+* Repository handover

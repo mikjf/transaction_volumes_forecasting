@@ -1,9 +1,9 @@
-.. six_transaction_volumes_forecasting documentation master file, created by
+.. SIX documentation master file, created by
    sphinx-quickstart.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-six_transaction_volumes_forecasting documentation!
+SIX documentation!
 ==============================================
 
 Contents:

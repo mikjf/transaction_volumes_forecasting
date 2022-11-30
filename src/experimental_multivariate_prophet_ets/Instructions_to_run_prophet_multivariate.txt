@@ -1,0 +1,65 @@
+The prophet mutivariate approach using additional regressors gives the lowest RMSE error. For the multivariate approach to be effective we use the ETS forecast for 
+the top (90 percent) transactions merchant columns and write this output to a csv file which is read and used as an additional regressor merchant column  
+for the run to get the forecast for sume of all transactions of merchants. To use the ETS output for merchants as additional regressors for the total transactions
+prophet multivariate forecast following steps a), b) and c) need to be run - 
+
+
+a) Generate csv file containing merchant list with top (Example: 90 percent) transactions
+
+########################################################
+
+Data structure requirements (.csv):
+
+read the csv file containing the whole merchants list Time_Series_Merchants_Transactions_Anonymized.csv.
+OUTPUT: will be 2 csv files one file containing the merchants list with top (Example: 90 percent) merchant transactions
+and the other csv file containing the total columns sum of top (Example: 90 percent) merchant transactions
+
+########################################################
+
+Instructions:
+1. Run create_sub_group_totals.py - This creates the 2 csv files as output, it also has a predefined percentage (as 0.9)
+to define top 90% merchants to be included. This percentage can be changed in the function call select_merchants.
+
+########################################################
+
+WorkFlow Structure
+
+├── create_sub_group_totals.py
+    └── load_and_output_top_merchants.py			# functions to get the top merchants and the bottom merchants
+	└── get_sum.py	                                # function to get total columns sum of top (Example: 90 percent) or bottom merchants transactions
+
+########################################################
+
+
+b) Script ETS for multivariable analysis with Prophet 
+
+########################################################
+
+Data structure requirements (.csv):
+
+columns = index;'Merchant Name';Dates_1;Date_2;...;Date_n
+
+*type(Dates_1) = timestamp // E.g.: '08-2020'
+	
+########################################################
+
+Instructions:
+Note: remember to change file name and file path as required. The csv file containing the merchants list with top (Example: 90 percent) merchant transactions as input to grid_search.py and DataFrame.py.
+1. Run grid_search.py - This script creates a json file with a dictionary where the key is the name of the merchant and the  value is the list of hyperparameters optimized for each merchant.
+2. Run DataFrame.py - This script takes the json file created before and gets the forecasts based on the hyperparameters given for ETS model, after that it stores the information in a data frame and saves it as a .csv file.
+
+########################################################
+
+WorkFlow Structure
+
+├── grid_search.py
+    └── Function_Get_CFG.py				# Creates a dictionary => {'Merchant name':['trend','damped_trend','seasonal','seasonal_periods','use_boxcox','remove_bias', 'smoothing_level']}
+	  └── Modeling_ETS.py				# Gets the hyperparameter combination with the lowest root square mean error and returns the combination as a list and the error
+└── DataFrame.py
+    └── Data_Store_Pred.py				# Saves a data frame with the forecasts as a .csv
+	  └── Data_Store_Pred.py			# Takes a time series data with the structure showed before, a json file with the structure of the dictionary outputted in "Function_Get_CFG.py" and the number of simulations that we want to forecast (5 by default). Returns a data frame with the forecasts based on ETS model. 
+ 
+                                    
+########################################################
+
+c) open the notebook in Mukund/multivariate_forecasting_prophet_regressor.ipynb either in jupyter-lab or Google colab. change the file name and path for variable "data_path" with csv containing the merchants list with top (Example: 90 percent) merchant transactions and change the file name and path for variable "data_path_sum" with the csv file containing the total columns sum of all merchant transactions, further change the file name and path for the  variable "predict_multivariate" with the csv file containing the merchants list with (Example: 90 percent) merchant transaction forecasts. Further change the variable "train_end_date" to change the test and train split. Run the notebook cells. 

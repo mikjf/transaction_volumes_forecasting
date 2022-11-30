@@ -1,0 +1,1 @@
+{"2022-09_Prophet": {"path": "models/2022-09_prophet_model.json", "predictions": "data/processed/2022-09_Pro_pred.csv", "type": "PROPHET", "rmse": 1419735.1116577147, "generation": "2022-09"}}
