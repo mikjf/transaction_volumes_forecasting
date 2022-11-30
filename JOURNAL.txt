@@ -1,4 +1,4 @@
-# SIX Payment Transaction Volumes Forecasting
+# Payment Transaction Volumes Forecasting
 
 #### -- Project Status: [Completed]
 
@@ -14,7 +14,7 @@ Our team tracked the progress of this project by creating a journal. The details
 * Started data exploration
 
 ## Day 2: 25/10/2022
-* First meeting with the SIX Team to discuss about the project
+* First meeting with the company to discuss about the project
 * Data cleaning
 * K-means clustering
 * t-SNE
@@ -55,13 +55,13 @@ Our team tracked the progress of this project by creating a journal. The details
 
 ## Day 8: 02/11/2022
 * Presentation preparation
-* Meeting with SIX
+* Meeting with the company
 * Furher modelling analysis aggregated data vs sum of individual merchants
 * Rating new and leaving clients
 * Focus on automation setup
 
 ## Day 9-10: 03-04/11/2022
-* Approach tuning to meet SIX's requirements
+* Approach tuning to meet the company's requirements
 * Further focus on automation setup
 
 ## Day 11-15: 07-11/11/2022
@@ -72,10 +72,10 @@ Our team tracked the progress of this project by creating a journal. The details
 * Automation testing
 
 ## Day 16: 14/11/2022
-* Q&A preparation for last meeting with SIX
+* Q&A preparation for last meeting with the company
 
 ## Day 17: 15/11/2022
-* Meeting with SIX
+* Meeting with the company
 * Tweaks and cleaning
 * Tracking files and models (Pickle, JSON)
 * Further editing on the final presentation
@@ -93,5 +93,5 @@ Our team tracked the progress of this project by creating a journal. The details
 * General repository clean-up
 
 ## Day 28: 30/11/2022
-* Project demo to the SIX team
+* Project demo to the the company team
 * Repository handover
