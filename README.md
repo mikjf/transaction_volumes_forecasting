@@ -1,11 +1,11 @@
-# SIX Payment Transaction Volumes Forecasting
+# Payment Transaction Volumes Forecasting
 
 #### -- Project Status: [Completed]
 
 ## Project Description and Business Case
 In a business driven by the number of transactions, historical volumes provide a solid foundation for setting future revenue expectations, yet overall trends may hide valuable insights through combining opposing signals. Therefore, an informed analysis of merchant level fluctuations is needed to design a reliable forecasting mechanism that could serve the business purpose.
 
-This project was given to us by SIX as our final project for our 480 hours Data Science Boootcamp by SIT Learning. SIX connects financial markets in Switzerland and abroad, providing services related to its four business units: stock exchanges, securities services, banking services, and financial information data provider. The SIX’s payment processing revenue model is based on transaction fees earned each time a merchant receives a payment and varies depending on the service that SIX is performing (i.e. direct transaction fees for standard payments, increased 3-D secure checkout, and fraud check).
+This project was given to us by a Swiss payment processing company as our final project for our 480 hours Data Science Boootcamp by SIT Learning. The company connects financial markets in Switzerland and abroad, providing services related to its four business units: stock exchanges, securities services, banking services, and financial information data provider. The company’s payment processing revenue model is based on transaction fees earned each time a merchant receives a payment and varies depending on the service that the company is performing (i.e. direct transaction fees for standard payments, increased 3-D secure checkout, and fraud check).
 
 ## Project Goals
 Our goal was to build a fully automated pipeline to forecast future transactions while analysing the business context behind the provided dataset.
