@@ -55,7 +55,7 @@ The run_all_three.py or the run_best_model.py can be also used on individual mer
 
 ## Streamlit App
 Our team created a Streamlit App that runs the scrips for visual representation:
-* [Streamlit App](https://mikjf-transaction-volumes-forecasting-streamlit-a-srcapp-vi2baj.streamlit.app/)
+* [Streamlit App](https://transaction-volumes-forecasting-app-py.streamlit.app/)
 * [Mock data](https://github.com/mikjf/transaction_volumes_forecasting_streamlit_app/blob/main/mock_data/Mock_Time_Series_Merchants_Transactions_Anonymized.csv)
 * [Streamlit App GitHub](https://github.com/mikjf/transaction_volumes_forecasting_streamlit_app)
 
