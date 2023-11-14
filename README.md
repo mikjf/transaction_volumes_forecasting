@@ -26,7 +26,7 @@ Our goal was to build a fully automated pipeline to forecast future transactions
 
 ### Technologies
 * Python
-* Pandas, Scikit-lean, Numpy, Datetime, Scipy, Plotly, Matplotlib, Seaborn
+* Pandas, Scikit-learn, Numpy, Datetime, Scipy, Plotly, Matplotlib, Seaborn
 * Pmdarima, Prophet, Statsmodels, Multiprocess
 
 ## How to run
